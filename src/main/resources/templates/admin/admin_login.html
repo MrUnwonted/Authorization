@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login</title>
+</head>
+<body>
+
+<div align="center">
+<h2>Welcome to Admin Login</h2>
+
+	<form th:action="@{/user/login}" method= "get">
+		<table>
+			<tr>
+			<td>E-mail: </td>
+			<td><input type="email" required></td>
+			</tr>
+			<tr>
+			<td>Password: </td>
+			<td><input type="password" required></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <input type="submit" value="login"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>
+
