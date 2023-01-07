@@ -9,7 +9,11 @@
 <div align="center">
 <h2>Welcome to Admin Login</h2>
 
-	<form th:action="@{/user/login}" method= "get">
+	<div th:if="${param.error}">
+		<h4 style="color:red">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</h4>
+	</div>
+
+	<form th:action="@{/admin/login}" method= "get">
 		<table>
 			<tr>
 			<td>E-mail: </td>
